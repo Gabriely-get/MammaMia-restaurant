@@ -1,0 +1,23 @@
+{
+  "name": "MammaMia-restaurant",
+  "version": "1.0.0",
+  "description": "Test for job opportunity at Devio",
+  "repository": "https://github.com/Gabriely-get/MammaMia-restaurant.git",
+  "author": "Gabriely Cristovao",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev --transpile-only --ignore-watch node_modules server.ts",
+    "database:dev": "(knex migrate:latest && knex seed:run)"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "knex": "^0.95.6",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "sqlite3": "^5.0.2",
+    "ts-node-dev": "^1.1.8"
+  }
+}
