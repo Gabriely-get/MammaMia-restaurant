@@ -4,8 +4,10 @@
 <body>
     <%- include('menu'); -%> 
     
-    <% if(message) { %>
-        <h1><%= message %></h1>
+    <% if(products) { %>
+        <% for(let i = 0; i<products.length; i++) {  %> 
+            <h1> <%= JSON.stringify(products[i]) %> </h1>
+        <% } %> 
     <% } else { %>
         <h1>Nothing</h1>
     <% } %>
